@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CV - Jorge Rodriguez</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100%;
+            margin: 0px;
+        }
+
+        a {
+            color: rgb(61, 54, 165);
+        }
+
+        section {
+            float: left;
+            height: 100%;
+        }
+
+        .left-section {
+            width: 26%;
+            padding: 0% 2%;
+            color: #d3d3d3;
+            background-color: rgb(29, 47, 80);
+        }
+
+        .left-section h2 {
+            margin-bottom: 0px;
+            margin-top: 30px;
+        }
+
+        .left-section p {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            /* font-weight: bold; */
+            font-size: medium;
+        }
+
+        .right-section {
+            width: 66%;
+            padding: 0% 2%;
+            background-color: #f1f1f1;
+        }
+
+        .custom-card {
+            background-color: #d3d3d3;
+            padding: 2% 2%;
+            width: 100%;
+            height: 110px;
+            /* display: inline-block; */
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            width: 35%;
+            height: 25%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            /* padding: 12px 16px; */
+            z-index: 1;
+        }
+
+        .custom-card p {
+            margin: 1vh;
+        }
+
+        .custom-card:hover .dropdown-content {
+            display: inline;
+        }
+
+        .custom-card:hover .hide-for-dropdown {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="left-section">
+        <img src="foto-perfil-cv.png" alt="Foto de perfil"
+            style="width: 100px; height: 100px; float: right; border-radius: 50%;">
+        <h2>Contacto</h2>
+        <p>+595 83 463 932</p>
+        <p>jorgejmrv6@gmail.com</p>
+        <p style="font-weight: bold;">
+            <a href="https://www.linkedin.com/in/jorge-rodriguez-62381489" target="_blank">Ir</a>
+            a Perfil de LinkedIn
+        </p>
+
+
+        <h2>Referencia Laboral</h2>
+        <ul>
+            <li>Banco Itau - Carlos Gomez - 0971 340606</li>
+            <li>Olam - Osvaldo Fernandez - 0983 362845</li>
+            <li>Rieder y Cia - Mario Acuña - 0994 200034</li>
+        </ul>
+
+        <h2>Hobbies/Pasatiempos</h2>
+        <ul>
+            <li>Practicar futbol o tenis</li>
+            <li>Realizar turismo interno</li>
+        </ul>
+    </section>
+
+
+    <section class="right-section">
+        <h1 style="font-size: xx-large;margin-bottom: 0px;">Jorge Rodriguez </h1>
+        <p style="font-size: large; margin-top: 4px;">Desarrollador Web</p>
+
+        <!-- Experiencia laboral -->
+        <div>
+            <div style="display: inline-block; width: 40%;">
+                <h2>Experiencia<span style="font-size: 12px;font-weight: normal;"> (Deslice cursor sobre cuadros)</span></h2>
+                <div class="custom-card">
+                    <div class="hide-for-dropdown">
+                        <p>Sodep S.A.</p>
+                        <p>Desarrollador de software</p>
+                        <p>Junio de 2018 hasta el Presente</p>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>Desarrollo de aplicaciones web con ReactJS y Spring Framework en 
+                            arquitectura MVC. Actualmente aprendiendo Android. 
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="custom-card">
+                    <div class="hide-for-dropdown">
+                        <p>Diviserv S.A.</p>
+                        <p>Técnico tercerizado en Banco Itau </p>
+                        <p>Agosto de 2016 a Mayo de 2018</p>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>Administración de teleconferencias, Administración de Good Technology(Smartphone-Tablet)
+                            , Verificación de sistemas en capa superior.
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="custom-card">
+                    <div class="hide-for-dropdown">
+                        <p>Olam S.R.L.</p>
+                        <p>Técnico de Infraestructura </p>
+                        <p>Mayo de 2015 a Julio de 2016</p>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>Soporte de Windows Server,
+                            Administración de dominios, firewall, antivirus endpoints,
+                            Active Directory, servicios de correo (Microsoft Exchange - Office 365 - Google Apps).    
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Historial académico -->
+            <div style="width: 40%; float: right;">
+                <h2>Historial Académico</h2>
+                <div class="custom-card">
+                    <div>
+                        <p>Licenciatura en Ciencias Informáticas</p>
+                        <p>Facultad Politécnica - UNA</p>
+                        <p>2015 hasta el Presente</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="custom-card">
+                    <div>
+                        <p>Bachiller Técnico en Informática</p>
+                        <p>Colegio Nacional Gral Andres Rodriguez </p>
+                        <p>2011 a 2013</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
